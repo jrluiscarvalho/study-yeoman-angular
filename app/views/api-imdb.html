@@ -1,0 +1,29 @@
+<div  ng-controller="ImdbCtrl">
+<div class="jumbotron">
+  <h2>Consumindo API IMDB</h2>
+
+  <form class="form" ng-submit="consuma()">
+
+    <label for="filme">Filme: </label>
+    <input type="text" name="filme"  ng-model="filme">
+
+    <button class="btn btn-danger">Vai!</button>
+
+    </form>
+</div>
+
+<form class="form">
+  <div class="form-group">
+    <label for="nomeFilme">Nome</label>
+    <input type="text" class="form-control" name="nomeFilme" ng-model="filmes.Title"/>
+  </div>
+  <div class="form-group">
+    <label for="nomeFilme">Ano</label>
+    <input type="text" class="form-control" name="nomeFilme" ng-model="filmes.Year"/>
+  </div>
+  <div class="form-group">
+    <label for="nomeFilme">Diretor</label>
+    <input type="text" class="form-control" name="nomeFilme" ng-model="filmes.Director"/>
+  </div>
+</form>
+</div>

@@ -15,7 +15,7 @@ angular
     'ngResource',
     'ngRoute'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -26,6 +26,10 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
+      })
+      .when('/api-imdb',{
+        templateUrl:'views/api-imdb.html',
+        controller: 'ImdbCtrl'
       })
       .otherwise({
         redirectTo: '/'
